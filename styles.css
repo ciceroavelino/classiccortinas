@@ -721,3 +721,56 @@ body {
         margin: 0 15px;
     }
 }
+/* Instagram Section - Novos estilos */
+.instagram-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 60px;
+}
+
+.instagram-header-image {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--gray);
+}
+
+.instagram-header-image a {
+    display: block;
+}
+
+.instagram-header-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 0.3s;
+}
+
+.instagram-header-image img:hover {
+    opacity: 0.9;
+}
+
+.instagram-embeds {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.instagram-embeds blockquote.instagram-media {
+    margin: 0 auto !important;
+    max-width: 100% !important;
+    min-width: 280px !important;
+}
+
+@media (max-width: 768px) {
+    .instagram-embeds {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+    
+    .instagram-header-image {
+        padding: 15px;
+    }
+}
