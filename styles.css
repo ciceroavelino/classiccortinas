@@ -617,12 +617,25 @@ body {
 /* Responsivo */
 @media (max-width: 768px) {
     .header .container {
-        flex-wrap: wrap;
-        gap: 10px;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .nav {
-        display: none;
+        display: flex;
+        width: 100%;
+        overflow-x: auto;
+        justify-content: center;
+        gap: 10px;
+        padding-bottom: 5px;
+        white-space: nowrap;
+    }
+
+    .nav a {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 20px;
     }
 
     .btn-whatsapp-header {
